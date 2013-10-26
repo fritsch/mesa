@@ -61,6 +61,7 @@ u_reduce_video_profile(enum pipe_video_profile profile)
       case PIPE_VIDEO_PROFILE_MPEG4_AVC_BASELINE:
       case PIPE_VIDEO_PROFILE_MPEG4_AVC_MAIN:
       case PIPE_VIDEO_PROFILE_MPEG4_AVC_HIGH:
+      case PIPE_VIDEO_PROFILE_MPEG4_AVC_HI10:
          return PIPE_VIDEO_FORMAT_MPEG4_AVC;
 
       default:
