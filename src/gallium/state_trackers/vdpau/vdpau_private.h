@@ -260,6 +260,8 @@ ProfileToPipe(VdpDecoderProfile vdpau_profile)
          return PIPE_VIDEO_PROFILE_VC1_MAIN;
       case VDP_DECODER_PROFILE_VC1_ADVANCED:
          return PIPE_VIDEO_PROFILE_VC1_ADVANCED;
+      case VDP_DECODER_PROFILE_H264_HI10:
+         return PIPE_VIDEO_PROFILE_MPEG4_AVC_HI10;
       default:
          return PIPE_VIDEO_PROFILE_UNKNOWN;
    }
@@ -281,6 +283,8 @@ PipeToProfile(enum pipe_video_profile p_profile)
          return VDP_DECODER_PROFILE_H264_MAIN;
       case PIPE_VIDEO_PROFILE_MPEG4_AVC_HIGH:
          return VDP_DECODER_PROFILE_H264_HIGH;
+      case PIPE_VIDEO_PROFILE_MPEG4_AVC_HI10:
+         return VDP_DECODER_PROFILE_H264_HI10;
       case PIPE_VIDEO_PROFILE_MPEG4_SIMPLE:
          return VDP_DECODER_PROFILE_MPEG4_PART2_SP;
       case PIPE_VIDEO_PROFILE_MPEG4_ADVANCED_SIMPLE:
